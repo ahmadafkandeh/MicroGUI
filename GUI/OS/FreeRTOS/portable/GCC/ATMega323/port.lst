@@ -1,0 +1,480 @@
+   1               		.file	"port.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	pxPortInitialiseStack
+  18               	pxPortInitialiseStack:
+  19               	.LFB2:
+  20               	.LM1:
+  21               	.LVL0:
+  22               	/* prologue: function */
+  23               	/* frame size = 0 */
+  24 0000 FC01      		movw r30,r24
+  25               	.LM2:
+  26 0002 91E1      		ldi r25,lo8(17)
+  27 0004 9083      		st Z,r25
+  28               	.LM3:
+  29 0006 22E2      		ldi r18,lo8(34)
+  30 0008 2293      		st -Z,r18
+  31               	.LM4:
+  32 000a 83E3      		ldi r24,lo8(51)
+  33               	.LVL1:
+  34 000c 8293      		st -Z,r24
+  35               	.LM5:
+  36 000e 6293      		st -Z,r22
+  37               	.LM6:
+  38 0010 7293      		st -Z,r23
+  39               	.LVL2:
+  40               	.LM7:
+  41 0012 1292      		st -Z,__zero_reg__
+  42               	.LM8:
+  43 0014 80E8      		ldi r24,lo8(-128)
+  44 0016 8293      		st -Z,r24
+  45               	.LM9:
+  46 0018 1292      		st -Z,__zero_reg__
+  47               	.LM10:
+  48 001a 82E0      		ldi r24,lo8(2)
+  49 001c 8293      		st -Z,r24
+  50               	.LM11:
+  51 001e 83E0      		ldi r24,lo8(3)
+  52 0020 8293      		st -Z,r24
+  53               	.LM12:
+  54 0022 84E0      		ldi r24,lo8(4)
+  55 0024 8293      		st -Z,r24
+  56               	.LM13:
+  57 0026 85E0      		ldi r24,lo8(5)
+  58 0028 8293      		st -Z,r24
+  59               	.LM14:
+  60 002a 86E0      		ldi r24,lo8(6)
+  61 002c 8293      		st -Z,r24
+  62               	.LM15:
+  63 002e 87E0      		ldi r24,lo8(7)
+  64 0030 8293      		st -Z,r24
+  65               	.LM16:
+  66 0032 88E0      		ldi r24,lo8(8)
+  67 0034 8293      		st -Z,r24
+  68               	.LM17:
+  69 0036 89E0      		ldi r24,lo8(9)
+  70 0038 8293      		st -Z,r24
+  71               	.LM18:
+  72 003a 80E1      		ldi r24,lo8(16)
+  73 003c 8293      		st -Z,r24
+  74               	.LM19:
+  75 003e 9293      		st -Z,r25
+  76               	.LM20:
+  77 0040 82E1      		ldi r24,lo8(18)
+  78 0042 8293      		st -Z,r24
+  79               	.LM21:
+  80 0044 83E1      		ldi r24,lo8(19)
+  81 0046 8293      		st -Z,r24
+  82               	.LM22:
+  83 0048 84E1      		ldi r24,lo8(20)
+  84 004a 8293      		st -Z,r24
+  85               	.LM23:
+  86 004c 85E1      		ldi r24,lo8(21)
+  87 004e 8293      		st -Z,r24
+  88               	.LM24:
+  89 0050 86E1      		ldi r24,lo8(22)
+  90 0052 8293      		st -Z,r24
+  91               	.LM25:
+  92 0054 87E1      		ldi r24,lo8(23)
+  93 0056 8293      		st -Z,r24
+  94               	.LM26:
+  95 0058 88E1      		ldi r24,lo8(24)
+  96 005a 8293      		st -Z,r24
+  97               	.LM27:
+  98 005c 89E1      		ldi r24,lo8(25)
+  99 005e 8293      		st -Z,r24
+ 100               	.LM28:
+ 101 0060 80E2      		ldi r24,lo8(32)
+ 102 0062 8293      		st -Z,r24
+ 103               	.LM29:
+ 104 0064 81E2      		ldi r24,lo8(33)
+ 105 0066 8293      		st -Z,r24
+ 106               	.LM30:
+ 107 0068 2293      		st -Z,r18
+ 108               	.LM31:
+ 109 006a 83E2      		ldi r24,lo8(35)
+ 110 006c 8293      		st -Z,r24
+ 111               	.LM32:
+ 112 006e 4293      		st -Z,r20
+ 113               	.LM33:
+ 114 0070 5293      		st -Z,r21
+ 115               	.LVL3:
+ 116               	.LM34:
+ 117 0072 86E2      		ldi r24,lo8(38)
+ 118 0074 8293      		st -Z,r24
+ 119               	.LM35:
+ 120 0076 87E2      		ldi r24,lo8(39)
+ 121 0078 8293      		st -Z,r24
+ 122               	.LM36:
+ 123 007a 88E2      		ldi r24,lo8(40)
+ 124 007c 8293      		st -Z,r24
+ 125               	.LM37:
+ 126 007e 89E2      		ldi r24,lo8(41)
+ 127 0080 8293      		st -Z,r24
+ 128               	.LM38:
+ 129 0082 80E3      		ldi r24,lo8(48)
+ 130 0084 8293      		st -Z,r24
+ 131               	.LM39:
+ 132 0086 81E3      		ldi r24,lo8(49)
+ 133 0088 8293      		st -Z,r24
+ 134 008a 3197      		sbiw r30,1
+ 135               	.LVL4:
+ 136               	.LM40:
+ 137 008c CF01      		movw r24,r30
+ 138               	/* epilogue start */
+ 139 008e 0895      		ret
+ 140               	.LFE2:
+ 142               	.global	xPortStartScheduler
+ 144               	xPortStartScheduler:
+ 145               	.LFB3:
+ 146               	.LM41:
+ 147               	/* prologue: function */
+ 148               	/* frame size = 0 */
+ 149               	.LBB4:
+ 150               	.LBB5:
+ 151               	.LM42:
+ 152 0090 1BBC      		out 75-32,__zero_reg__
+ 153               	.LM43:
+ 154 0092 8CE7      		ldi r24,lo8(124)
+ 155 0094 8ABD      		out 74-32,r24
+ 156               	.LM44:
+ 157 0096 8BE0      		ldi r24,lo8(11)
+ 158 0098 8EBD      		out 78-32,r24
+ 159               	.LM45:
+ 160 009a 89B7      		in r24,89-32
+ 161               	.LVL5:
+ 162               	.LM46:
+ 163 009c 8061      		ori r24,lo8(16)
+ 164               	.LM47:
+ 165 009e 89BF      		out 89-32,r24
+ 166               	.LBE5:
+ 167               	.LBE4:
+ 168               	.LM48:
+ 169               	/* #APP */
+ 170               	 ;  345 "../../Source/portable/GCC/ATMega323/port.c" 1
+ 171 00a0 A091 0000 		lds	r26, pxCurrentTCB		
+ 172 00a4 B091 0000 		lds	r27, pxCurrentTCB + 1	
+ 173 00a8 CD91      		ld		r28, x+					
+ 174 00aa CDBF      		out	__SP_L__, r28			
+ 175 00ac DD91      		ld		r29, x+					
+ 176 00ae DEBF      		out	__SP_H__, r29			
+ 177 00b0 FF91      		pop	r31						
+ 178 00b2 EF91      		pop	r30						
+ 179 00b4 DF91      		pop	r29						
+ 180 00b6 CF91      		pop	r28						
+ 181 00b8 BF91      		pop	r27						
+ 182 00ba AF91      		pop	r26						
+ 183 00bc 9F91      		pop	r25						
+ 184 00be 8F91      		pop	r24						
+ 185 00c0 7F91      		pop	r23						
+ 186 00c2 6F91      		pop	r22						
+ 187 00c4 5F91      		pop	r21						
+ 188 00c6 4F91      		pop	r20						
+ 189 00c8 3F91      		pop	r19						
+ 190 00ca 2F91      		pop	r18						
+ 191 00cc 1F91      		pop	r17						
+ 192 00ce 0F91      		pop	r16						
+ 193 00d0 FF90      		pop	r15						
+ 194 00d2 EF90      		pop	r14						
+ 195 00d4 DF90      		pop	r13						
+ 196 00d6 CF90      		pop	r12						
+ 197 00d8 BF90      		pop	r11						
+ 198 00da AF90      		pop	r10						
+ 199 00dc 9F90      		pop	r9						
+ 200 00de 8F90      		pop	r8						
+ 201 00e0 7F90      		pop	r7						
+ 202 00e2 6F90      		pop	r6						
+ 203 00e4 5F90      		pop	r5						
+ 204 00e6 4F90      		pop	r4						
+ 205 00e8 3F90      		pop	r3						
+ 206 00ea 2F90      		pop	r2						
+ 207 00ec 1F90      		pop	r1						
+ 208 00ee 0F90      		pop	r0						
+ 209 00f0 0FBE      		out	__SREG__, r0			
+ 210 00f2 0F90      		pop	r0						
+ 211               		
+ 212               	 ;  0 "" 2
+ 213               	.LM49:
+ 214               	 ;  349 "../../Source/portable/GCC/ATMega323/port.c" 1
+ 215 00f4 0895      		ret
+ 216               	 ;  0 "" 2
+ 217               	.LM50:
+ 218               	/* #NOAPP */
+ 219 00f6 81E0      		ldi r24,lo8(1)
+ 220               	.LVL6:
+ 221               	/* epilogue start */
+ 222 00f8 0895      		ret
+ 223               	.LFE3:
+ 225               	.global	vPortEndScheduler
+ 227               	vPortEndScheduler:
+ 228               	.LFB4:
+ 229               	.LM51:
+ 230               	/* prologue: function */
+ 231               	/* frame size = 0 */
+ 232               	/* epilogue start */
+ 233               	.LM52:
+ 234 00fa 0895      		ret
+ 235               	.LFE4:
+ 237               	.global	vPortYieldFromTick
+ 239               	vPortYieldFromTick:
+ 240               	.LFB6:
+ 241               	.LM53:
+ 242               	/* prologue: naked */
+ 243               	/* frame size = 0 */
+ 244               	.LM54:
+ 245               	/* #APP */
+ 246               	 ;  387 "../../Source/portable/GCC/ATMega323/port.c" 1
+ 247 00fc 0F92      		push	r0						
+ 248 00fe 0FB6      		in		r0, __SREG__			
+ 249 0100 F894      		cli							
+ 250 0102 0F92      		push	r0						
+ 251 0104 1F92      		push	r1						
+ 252 0106 1124      		clr	r1						
+ 253 0108 2F92      		push	r2						
+ 254 010a 3F92      		push	r3						
+ 255 010c 4F92      		push	r4						
+ 256 010e 5F92      		push	r5						
+ 257 0110 6F92      		push	r6						
+ 258 0112 7F92      		push	r7						
+ 259 0114 8F92      		push	r8						
+ 260 0116 9F92      		push	r9						
+ 261 0118 AF92      		push	r10						
+ 262 011a BF92      		push	r11						
+ 263 011c CF92      		push	r12						
+ 264 011e DF92      		push	r13						
+ 265 0120 EF92      		push	r14						
+ 266 0122 FF92      		push	r15						
+ 267 0124 0F93      		push	r16						
+ 268 0126 1F93      		push	r17						
+ 269 0128 2F93      		push	r18						
+ 270 012a 3F93      		push	r19						
+ 271 012c 4F93      		push	r20						
+ 272 012e 5F93      		push	r21						
+ 273 0130 6F93      		push	r22						
+ 274 0132 7F93      		push	r23						
+ 275 0134 8F93      		push	r24						
+ 276 0136 9F93      		push	r25						
+ 277 0138 AF93      		push	r26						
+ 278 013a BF93      		push	r27						
+ 279 013c CF93      		push	r28						
+ 280 013e DF93      		push	r29						
+ 281 0140 EF93      		push	r30						
+ 282 0142 FF93      		push	r31						
+ 283 0144 A091 0000 		lds	r26, pxCurrentTCB		
+ 284 0148 B091 0000 		lds	r27, pxCurrentTCB + 1	
+ 285 014c 0DB6      		in		r0, 0x3d				
+ 286 014e 0D92      		st		x+, r0					
+ 287 0150 0EB6      		in		r0, 0x3e				
+ 288 0152 0D92      		st		x+, r0					
+ 289               		
+ 290               	 ;  0 "" 2
+ 291               	.LM55:
+ 292               	/* #NOAPP */
+ 293 0154 0E94 0000 		call vTaskIncrementTick
+ 294               	.LM56:
+ 295 0158 0E94 0000 		call vTaskSwitchContext
+ 296               	.LM57:
+ 297               	/* #APP */
+ 298               	 ;  390 "../../Source/portable/GCC/ATMega323/port.c" 1
+ 299 015c A091 0000 		lds	r26, pxCurrentTCB		
+ 300 0160 B091 0000 		lds	r27, pxCurrentTCB + 1	
+ 301 0164 CD91      		ld		r28, x+					
+ 302 0166 CDBF      		out	__SP_L__, r28			
+ 303 0168 DD91      		ld		r29, x+					
+ 304 016a DEBF      		out	__SP_H__, r29			
+ 305 016c FF91      		pop	r31						
+ 306 016e EF91      		pop	r30						
+ 307 0170 DF91      		pop	r29						
+ 308 0172 CF91      		pop	r28						
+ 309 0174 BF91      		pop	r27						
+ 310 0176 AF91      		pop	r26						
+ 311 0178 9F91      		pop	r25						
+ 312 017a 8F91      		pop	r24						
+ 313 017c 7F91      		pop	r23						
+ 314 017e 6F91      		pop	r22						
+ 315 0180 5F91      		pop	r21						
+ 316 0182 4F91      		pop	r20						
+ 317 0184 3F91      		pop	r19						
+ 318 0186 2F91      		pop	r18						
+ 319 0188 1F91      		pop	r17						
+ 320 018a 0F91      		pop	r16						
+ 321 018c FF90      		pop	r15						
+ 322 018e EF90      		pop	r14						
+ 323 0190 DF90      		pop	r13						
+ 324 0192 CF90      		pop	r12						
+ 325 0194 BF90      		pop	r11						
+ 326 0196 AF90      		pop	r10						
+ 327 0198 9F90      		pop	r9						
+ 328 019a 8F90      		pop	r8						
+ 329 019c 7F90      		pop	r7						
+ 330 019e 6F90      		pop	r6						
+ 331 01a0 5F90      		pop	r5						
+ 332 01a2 4F90      		pop	r4						
+ 333 01a4 3F90      		pop	r3						
+ 334 01a6 2F90      		pop	r2						
+ 335 01a8 1F90      		pop	r1						
+ 336 01aa 0F90      		pop	r0						
+ 337 01ac 0FBE      		out	__SREG__, r0			
+ 338 01ae 0F90      		pop	r0						
+ 339               		
+ 340               	 ;  0 "" 2
+ 341               	.LM58:
+ 342               	 ;  392 "../../Source/portable/GCC/ATMega323/port.c" 1
+ 343 01b0 0895      		ret
+ 344               	 ;  0 "" 2
+ 345               	/* epilogue start */
+ 346               	.LM59:
+ 347               	/* #NOAPP */
+ 348               	.LFE6:
+ 350               	.global	__vector_7
+ 352               	__vector_7:
+ 353               	.LFB8:
+ 354               	.LM60:
+ 355               	/* prologue: naked */
+ 356               	/* frame size = 0 */
+ 357               	.LM61:
+ 358 01b2 0E94 0000 		call vPortYieldFromTick
+ 359               	.LM62:
+ 360               	/* #APP */
+ 361               	 ;  446 "../../Source/portable/GCC/ATMega323/port.c" 1
+ 362 01b6 1895      		reti
+ 363               	 ;  0 "" 2
+ 364               	/* epilogue start */
+ 365               	.LM63:
+ 366               	/* #NOAPP */
+ 367               	.LFE8:
+ 369               	.global	vPortYield
+ 371               	vPortYield:
+ 372               	.LFB5:
+ 373               	.LM64:
+ 374               	/* prologue: naked */
+ 375               	/* frame size = 0 */
+ 376               	.LM65:
+ 377               	/* #APP */
+ 378               	 ;  370 "../../Source/portable/GCC/ATMega323/port.c" 1
+ 379 01b8 0F92      		push	r0						
+ 380 01ba 0FB6      		in		r0, __SREG__			
+ 381 01bc F894      		cli							
+ 382 01be 0F92      		push	r0						
+ 383 01c0 1F92      		push	r1						
+ 384 01c2 1124      		clr	r1						
+ 385 01c4 2F92      		push	r2						
+ 386 01c6 3F92      		push	r3						
+ 387 01c8 4F92      		push	r4						
+ 388 01ca 5F92      		push	r5						
+ 389 01cc 6F92      		push	r6						
+ 390 01ce 7F92      		push	r7						
+ 391 01d0 8F92      		push	r8						
+ 392 01d2 9F92      		push	r9						
+ 393 01d4 AF92      		push	r10						
+ 394 01d6 BF92      		push	r11						
+ 395 01d8 CF92      		push	r12						
+ 396 01da DF92      		push	r13						
+ 397 01dc EF92      		push	r14						
+ 398 01de FF92      		push	r15						
+ 399 01e0 0F93      		push	r16						
+ 400 01e2 1F93      		push	r17						
+ 401 01e4 2F93      		push	r18						
+ 402 01e6 3F93      		push	r19						
+ 403 01e8 4F93      		push	r20						
+ 404 01ea 5F93      		push	r21						
+ 405 01ec 6F93      		push	r22						
+ 406 01ee 7F93      		push	r23						
+ 407 01f0 8F93      		push	r24						
+ 408 01f2 9F93      		push	r25						
+ 409 01f4 AF93      		push	r26						
+ 410 01f6 BF93      		push	r27						
+ 411 01f8 CF93      		push	r28						
+ 412 01fa DF93      		push	r29						
+ 413 01fc EF93      		push	r30						
+ 414 01fe FF93      		push	r31						
+ 415 0200 A091 0000 		lds	r26, pxCurrentTCB		
+ 416 0204 B091 0000 		lds	r27, pxCurrentTCB + 1	
+ 417 0208 0DB6      		in		r0, 0x3d				
+ 418 020a 0D92      		st		x+, r0					
+ 419 020c 0EB6      		in		r0, 0x3e				
+ 420 020e 0D92      		st		x+, r0					
+ 421               		
+ 422               	 ;  0 "" 2
+ 423               	.LM66:
+ 424               	/* #NOAPP */
+ 425 0210 0E94 0000 		call vTaskSwitchContext
+ 426               	.LM67:
+ 427               	/* #APP */
+ 428               	 ;  372 "../../Source/portable/GCC/ATMega323/port.c" 1
+ 429 0214 A091 0000 		lds	r26, pxCurrentTCB		
+ 430 0218 B091 0000 		lds	r27, pxCurrentTCB + 1	
+ 431 021c CD91      		ld		r28, x+					
+ 432 021e CDBF      		out	__SP_L__, r28			
+ 433 0220 DD91      		ld		r29, x+					
+ 434 0222 DEBF      		out	__SP_H__, r29			
+ 435 0224 FF91      		pop	r31						
+ 436 0226 EF91      		pop	r30						
+ 437 0228 DF91      		pop	r29						
+ 438 022a CF91      		pop	r28						
+ 439 022c BF91      		pop	r27						
+ 440 022e AF91      		pop	r26						
+ 441 0230 9F91      		pop	r25						
+ 442 0232 8F91      		pop	r24						
+ 443 0234 7F91      		pop	r23						
+ 444 0236 6F91      		pop	r22						
+ 445 0238 5F91      		pop	r21						
+ 446 023a 4F91      		pop	r20						
+ 447 023c 3F91      		pop	r19						
+ 448 023e 2F91      		pop	r18						
+ 449 0240 1F91      		pop	r17						
+ 450 0242 0F91      		pop	r16						
+ 451 0244 FF90      		pop	r15						
+ 452 0246 EF90      		pop	r14						
+ 453 0248 DF90      		pop	r13						
+ 454 024a CF90      		pop	r12						
+ 455 024c BF90      		pop	r11						
+ 456 024e AF90      		pop	r10						
+ 457 0250 9F90      		pop	r9						
+ 458 0252 8F90      		pop	r8						
+ 459 0254 7F90      		pop	r7						
+ 460 0256 6F90      		pop	r6						
+ 461 0258 5F90      		pop	r5						
+ 462 025a 4F90      		pop	r4						
+ 463 025c 3F90      		pop	r3						
+ 464 025e 2F90      		pop	r2						
+ 465 0260 1F90      		pop	r1						
+ 466 0262 0F90      		pop	r0						
+ 467 0264 0FBE      		out	__SREG__, r0			
+ 468 0266 0F90      		pop	r0						
+ 469               		
+ 470               	 ;  0 "" 2
+ 471               	.LM68:
+ 472               	 ;  374 "../../Source/portable/GCC/ATMega323/port.c" 1
+ 473 0268 0895      		ret
+ 474               	 ;  0 "" 2
+ 475               	/* epilogue start */
+ 476               	.LM69:
+ 477               	/* #NOAPP */
+ 478               	.LFE5:
+ 544               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 port.c
+C:\Users\mohammad\AppData\Local\Temp/ccHVQRRO.s:2      *ABS*:0000003f __SREG__
+C:\Users\mohammad\AppData\Local\Temp/ccHVQRRO.s:3      *ABS*:0000003e __SP_H__
+C:\Users\mohammad\AppData\Local\Temp/ccHVQRRO.s:4      *ABS*:0000003d __SP_L__
+C:\Users\mohammad\AppData\Local\Temp/ccHVQRRO.s:5      *ABS*:00000034 __CCP__
+C:\Users\mohammad\AppData\Local\Temp/ccHVQRRO.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\mohammad\AppData\Local\Temp/ccHVQRRO.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\mohammad\AppData\Local\Temp/ccHVQRRO.s:18     .text:00000000 pxPortInitialiseStack
+C:\Users\mohammad\AppData\Local\Temp/ccHVQRRO.s:144    .text:00000090 xPortStartScheduler
+C:\Users\mohammad\AppData\Local\Temp/ccHVQRRO.s:227    .text:000000fa vPortEndScheduler
+C:\Users\mohammad\AppData\Local\Temp/ccHVQRRO.s:239    .text:000000fc vPortYieldFromTick
+C:\Users\mohammad\AppData\Local\Temp/ccHVQRRO.s:352    .text:000001b2 __vector_7
+C:\Users\mohammad\AppData\Local\Temp/ccHVQRRO.s:371    .text:000001b8 vPortYield
+
+UNDEFINED SYMBOLS
+pxCurrentTCB
+vTaskIncrementTick
+vTaskSwitchContext

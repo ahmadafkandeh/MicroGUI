@@ -1,0 +1,14 @@
+touch==> calib??==> save data to eeprom
+
+OnScreenkey
+
+kelid ha tarif nashodan kamel
+
+vase event handler rahe behtari hast?
+
+functione Draw vase memo bayad bekol avazshe
+
+==
+Heap
+alan man umadam az heape free rtos estefade kardam, ama tuye hafeze moshkel daram, kam miaram.
+=========================================
